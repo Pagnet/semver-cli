@@ -36,4 +36,3 @@ release:
 
 all: build release
 
-.PHONY: build markdown release

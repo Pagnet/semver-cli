@@ -2,7 +2,10 @@ module github.com/Pagnet/semver-cli
 
 go 1.19
 
-require github.com/spf13/cobra v1.6.1
+require (
+	github.com/gavv/cobradoc v1.0.0
+	github.com/spf13/cobra v1.6.1
+)
 
 require (
 	github.com/hashicorp/go-version v1.6.0
