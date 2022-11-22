@@ -1,7 +1,0 @@
-go run main.go append --repos="ms-core,ms-agenda,ms-payment-links,ms-anticipation-simulation,ms-anticipation-processor,ms-advancement,ms-sales,ms-pix,ms-btg-notification,ms-baas-management,ms-payments-reconciliation,ms-funding,ms-acquiring,ms-slc,ms-rewards,ms-cip,ms-consulting,ms-reconciliation,ms-cob" --orgname=Pagnet --dest="/home/thiagozs/workspace" --file="config/initializers/sentry.rb" --anchor="SENTRY_PROJECT_NAME" --line="  config.release = \"Release-#{File.open(Rails.root.join('version.txt')).read.chomp}\" if File.exist?(Rails.root.join('version.txt'))" --branch="github/actions"
-
-go run main.go append --repos="pagnet" --orgname=Pagnet --dest="/home/thiagozs/workspace" --file="config/initializers/sentry.rb" --anchor="SENTRY_PROJECT_NAME" --line="  config.release = \"Release-#{File.open(Rails.root.join('version.txt')).read.chomp}\" if File.exist?(Rails.root.join('version.txt'))" --branch="github/actions"
-
-go run main.go copyfiles --repos="ms-core,ms-agenda,ms-payment-links,ms-anticipation-simulation,ms-anticipation-processor,ms-advancement,ms-sales,ms-pix,ms-btg-notification,ms-baas-management,ms-payments-reconciliation,ms-funding,ms-acquiring,ms-slc,ms-rewards,ms-cip,ms-consulting,ms-reconciliation,ms-cob" --orgname="Pagnet" --source="embed::github" --dest="/home/thiagozs/workspace" --branch="github/actions" --debug
-
-go run main.go copyfiles --repos="pagnet" --orgname="Pagnet" --source="embed::github" --dest="/home/thiagozs/workspace" --branch="github/actions" --debug
