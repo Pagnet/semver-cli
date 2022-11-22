@@ -21,14 +21,6 @@ var semverCmd = &cobra.Command{
 	Long:    ``,
 	Run: func(cmd *cobra.Command, args []string) {
 
-		vv, err := cmd.Flags().GetInt("e")
-		if err != nil {
-			fmt.Println(err)
-			os.Exit(1)
-		}
-
-		fmt.Println(vv)
-
 		v1, err := version.NewVersion(Semverv1)
 		if err != nil {
 			fmt.Println(err)
